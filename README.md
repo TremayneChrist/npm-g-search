@@ -1,4 +1,4 @@
-# npm-g-search
+# g-search
 Searches for installed global modules
 
 ```
