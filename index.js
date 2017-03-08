@@ -52,4 +52,6 @@ const search = query => {
   })
 }
 
+search.search = search; // Allow for module.search()
+
 module.exports = search
