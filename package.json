@@ -1,6 +1,6 @@
 {
   "name": "g-search",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Searches globably installed npm modules",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TremayneChrist/g-search.git"
+    "url": "git+https://github.com/TremayneChrist/npm-g-search.git"
   },
   "keywords": [
     "npm",
@@ -25,9 +25,9 @@
   "author": "Tremayne Christ",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TremayneChrist/g-search/issues"
+    "url": "https://github.com/TremayneChrist/npm-g-search/issues"
   },
-  "homepage": "https://github.com/TremayneChrist/g-search#readme",
+  "homepage": "https://github.com/TremayneChrist/npm-g-search#readme",
   "dependencies": {
     "glob": "^7.1.1"
   }
