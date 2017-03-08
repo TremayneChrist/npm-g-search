@@ -1,5 +1,5 @@
 # g-search
-Searches for installed global modules
+Super fast search for globally installed node modules!
 
 ```
 $ npm i g-search
