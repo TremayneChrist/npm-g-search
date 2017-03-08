@@ -9,7 +9,7 @@ const modulesFolder = execSync('npm root -g', { encoding: 'utf8' }).trim();
 // Get Global Modules
 const getModuleInfo = () =>
 
-// Find globalally installed modules
+// Find globally installed modules
 new Promise((resolve, reject) => 
 glob('*/package.json', { cwd: modulesFolder }, (err, matches) => {
   if (err) {
@@ -38,7 +38,8 @@ new Promise((resolve, reject) => {
 .then(modules => modules.map(module => {
   return {
     name: module.name,
-    version: module.version
+    version: module.version,
+    location: path.join(modulesFolder, module.name)
   }
 }))
 
@@ -50,5 +51,7 @@ const search = query => {
     
   })
 }
+
+search.search = search; // Allow for module.search()
 
 module.exports = search
