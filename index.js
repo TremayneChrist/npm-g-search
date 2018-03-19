@@ -10,8 +10,8 @@ const modulesFolder = execSync('npm root -g', { encoding: 'utf8' }).trim();
 const getModuleInfo = () =>
 
 // Find globally installed modules
-new Promise((resolve, reject) => 
-glob('*/package.json', { cwd: modulesFolder }, (err, matches) => {
+new Promise((resolve, reject) =>
+glob('{@*/*,*}/package.json', { cwd: modulesFolder }, (err, matches) => {
   if (err) {
     reject(err)
   }
@@ -48,7 +48,7 @@ const search = query => {
     return modules.filter(module => {
       return !query || module.name.match(query)
     })
-    
+
   })
 }
 
