@@ -1,6 +1,6 @@
 {
   "name": "g-search",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Super fast searching of globally installed node modules",
   "main": "index.js",
   "scripts": {
